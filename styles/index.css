@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('.assets\fonts\HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Hanken Grotesk Bold';
+    src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+@font-face {
+    font-family: 'Hanken Grotesk Extra Bold';
+    src: url('/assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Hanken Grotesk Medium';
+    src: url('/assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+
+:root{
+    /* Primary colors */
+    --clr-light-red: hsl(0, 100%, 67%);
+    --clr-orangey-yellow: hsl(39, 100%, 56%);
+    --clr-green-teal: hsl(166, 100%, 37%);
+    --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --grad-light-slate-blue-background: hsl(252, 100%, 67%);
+    --grad-light-royal-blue-background: hsl(241, 81%, 54%);
+    --grad-violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --grad-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pale-blue: hsl(221, 100%, 96%);
+    --clr-light-lavender: hsl(241, 100%, 89%);
+    --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Body Copy */
+    --fs-paragraphs: 18px;
+
+    /* Font */
+    --ff-Hanken-Grotesk: 'Hanken Grotesk';
+    --ff-Hanken-Grotesk-bold: 'Hanken Grotesk Bold';
+    --ff-Hanken-Grotesk-extra-bold: 'Hanken Grotesk Extra Bold';
+    --ff-Hanken-Grotesk-medium: 'Hanken Grotesk Medium';
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-800: 800;
+}
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
