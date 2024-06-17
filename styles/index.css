@@ -54,18 +54,20 @@
     margin: 0;
     padding: 0;
 }
-main{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-}
 .main-container{
-    
+    display: flex;
+    flex-direction: column;
 }
 .header-container{
-    padding-top: 1em;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 2em 0;
     text-align: center;
     background-color: var(--clr-cobalt-blue); /* need gradient */
+    border-radius: 0 0 30px 30px;
+    
 }
 .header-container h1 {
     font-family: var(--ff-Hanken-Grotesk);
@@ -73,16 +75,110 @@ main{
     font-weight: var(--fw-500);
     color: var(--clr-white);
 }
-#score-results-circle{
-    margin: 2em 8em 2em 8em;
+.header-container #score-results-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin-top: 1.5em;
     border: 1px solid var(--clr-dark-gray-blue);
-    border-radius: 1000px;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    font-family: var(--ff-Hanken-Grotesk);
 }
-#score-results-circle h2{
+.header-container #score-results-circle h2{
     color: var(--clr-white); 
+    font-size: 46px;
+    font-weight: var(--fw-800);
+}
+.header-container #result-remainder{
+    color: var(--clr-white) ;
+}
+.header-container #great{
+    color: var(--clr-white);
+    font-family: var(--ff-Hanken-Grotesk-extra-bold);
+    font-weight: var(--fw-700);
+    font-size: 26px;
+    margin: 1em 0 .5em 0;
+}
+.header-container #score-percentage{
+    margin: 0 5em 0 5em;
+    color: var(--clr-white);
+    font-family: var(--ff-Hanken-Grotesk);
+    font-size: 14px;
+    font-weight: var(--fw-500);
 }
 .results-container{
     margin: 1em 2em 0 2em;    
 }
+.results-container #summary-header{
+    margin-bottom: 1em;
+    font-family: var(--ff-Hanken-Grotesk-bold);
+}
+.results-container #reaction-container, 
+.results-container #memory-container, 
+.results-container #verbal-container, 
+.results-container #visual-container{
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding-left: 3em;
+    margin-bottom: 1em;
+    height: 3em; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 6%;
+    font-family: var(--ff-Hanken-Grotesk-bold);
+    font-size: var(--fs-paragraphs);
+    font-weight: var(--fw-500);
+}
+.results-container #reaction-container{
+    background-image: url('/assets/images/icon-reaction.svg');
+    color: var(--clr-light-red);
+    background-color: hsl(0, 100%, 67%, .1);
+}
+.results-container #memory-container{
+    background-image: url('/assets/images/icon-memory.svg');
+    color: var(--clr-orangey-yellow);    
+    background-color: hsl(39, 100%, 56%, .1);    
+}
+.results-container #verbal-container{
+    background-image: url('/assets/images/icon-verbal.svg');
+    color: var(--clr-green-teal);    
+    background-color: hsl(166, 100%, 37%, .1);
+}
+.results-container #visual-container{
+    background-image: url('/assets/images/icon-visual.svg');
+    color: var(--clr-cobalt-blue);    
+    background-color: hsl(234, 85%, 45%, .1);
+}
+.results-container #reaction-ratio,
+.results-container #memory-ratio,
+.results-container #verbal-ratio,
+.results-container #visual-ratio{    
+    color: var(--clr-dark-gray-blue);
+    position: absolute;
+    right: 2.5em;
+}
+.results-container #reaction-ratio:after,
+.results-container #memory-ratio:after,
+.results-container #verbal-ratio:after,
+.results-container #visual-ratio:after{    
+    content: '/ 100';
+    color: var(--clr-light-lavender);
+}
+.results-container #continue-button{
+    font-family: var(--ff-Hanken-Grotesk-bold);
+    font-size: var(--fs-paragraphs);
+    font-weight: var(--fw-700);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-dark-gray-blue); 
+    background-color:  var(--clr-dark-gray-blue);
+    width: 100%;
+    height: 3em;
+    border-radius: 500px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
