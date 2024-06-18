@@ -196,7 +196,7 @@
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    margin-top: 1em;
+    margin-top: .5em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
